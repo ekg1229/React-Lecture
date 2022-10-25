@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    font-family: normal;
+    color: brown;
+}
+body{
+    background: aliceblue;
+    font-family: 휴먼편지체, 바탕, serif;
+}
+body span{
+    font-family: normal;
+    color: darkblue;
+    font-weight: bold;
+}
+body div{
+    text-indent: 1em;
+}
+footer{
+    text-indent: 1em;
+    border-radius: 10px;
+    background: orange;
+    margin: 10px;
+}
+form{
+    background-color: pink;
+    margin: 20px;
+    padding-left: 15px;
+}
+form > input{
+    color: red;
+    font-weight: normal;
+}

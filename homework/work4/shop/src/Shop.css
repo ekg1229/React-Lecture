@@ -1,0 +1,55 @@
+.wrapper{
+    margin: 2rem; /* 카드 여백 크기 */
+    display: grid; /* 각 그리드 아이템들을 그리드 형태로 배치 */
+    gap: 1rem; /* 갭은 1rem으로 설정 */
+    grid-template-rows: 1fr; /* 그리드 아이템을 동일 크기로 행으로 배치 */
+    justify-content: center; /* 아이템을 중앙 정렬 */
+}
+
+.card{
+    box-shadow: 0 0 10px 5px gray; /* 3차원 박스 효과 */
+    border-radius: 2px; /* 카드 모서리를 둥글게 만들어줌 */
+    min-width: 18rem; /* 카드의 최소 크기 */
+    display: flex; /* 아이템들을 flex 형태로 배치 */
+}
+
+.card_img{
+    width: 12rem; /* 제품 이미지의 가로폭 설정 */
+    height: 15rem; /* 제품 이미지의 세로폭 설정 */
+    object-fit: cover; /* 이미지를 가로세로에 맞게 채움 */
+    padding: 20px; /* 패딩은 20px로 설정 */
+}
+
+.card_body{
+    margin: 1rem; /* 여백은 1rem으로 설정 */
+}
+
+.card_time{
+    font-size: 1.4rem; /* 글자 크기는 1.4rem으로 설정 */
+    color: yellow; /* 색상은 노란색으로 설정 */
+    margin-top: 0.6rem; /* 윗쪽 여백은 0.6rem으로 설정 */
+    /* 글자 테두리에 그림자 효과를 설정 */
+    /* 순서대로 각각 그림자 수평거리, 수직거리, 흐림 정도, 글씨 테두리색*/
+    text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.card_title{
+    line-height: 1.4rem; /* 카드 제목의 줄 높이는 1.4rem으로 설정 */
+    margin-bottom: 0.5rem; /* 바닥 여백은 0.5rem으로 설정 */
+}
+
+.card_description{
+    line-height: 1.2rem; /* 카드 설명 부분의 줄 높이는 1.2rem으로 설정 */
+}
+
+.car_price{
+    font-size: 1.4rem; /* 가격 글자 크기는 1.4rem으로 설정 */
+    margin-top: 0.6rem; /* 윗쪽 여백은 0.6rem으로 설정 */
+}
+
+.card_btn{
+    width: fit-content; /* 너비는 가용 너비-margin 값(하이브리드 모드처럼)으로 설정 */
+    height: min-content; /* 높이는 최소한으로 설정 */
+    margin-right: 0em; /* 우측 여백 없음 */
+    margin-bottom: 0rem; /* 바닥 여백 없음 */
+}

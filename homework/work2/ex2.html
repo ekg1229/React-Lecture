@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>모바일웹 실습</title>
+        <link type="text/css" rel="stylesheet" href="css/common.css">
+        <link type="text/css" rel="stylesheet" href="css/nav.css">
+        <link type="text/css" rel="stylesheet" href="css/aside.css">
+        <link type="text/css" rel="stylesheet" href="css/login.css">
+        <link type="text/css" rel="stylesheet" href="css/bbs.css">
+    </head>
+
+    <body>
+        <!--nav-->
+        <nav>
+            <div id="nav_1"> HOME | LOGIN | JOIN | NOTICE</div>
+
+            <div id="nav_2">
+                <div id="nav_2_text1">자유 게시판</div>
+                <div id="nav_2_text2">기타 연주</div>
+                <div id="nav_2_text3">공동 구매</div>
+                <div id="nav_2_text4">연주회 안내</div>
+                <div id="nav_2_text5">회원 게시판</div>
+            </div>
+        </nav>
+
+        <!--aside-->
+        <aside>
+            <img id="aside_logo" src="img/logo.png" alt="">
+
+            <div id="aside_loginbox">
+                <h3 id="aside_loginbox_member">Member</h3>
+                <h3 id="aside_loginbox_login">LOGIN</h3>
+
+                <form name="login" method="post">
+                    <input id="id" type="text" onKeyDown="if(event.keyCode == 13) Id_check()">
+                    <button id="login_button" onclick="login_Chk()"><img src="img/btn_login.gif"></button>
+                    <input id="password" type="password" onKeyDown="if(event.keyCode == 13) Pw_check()">
+
+                    <img id="join" src="img/btn_join.gif" alt="">
+                    <img id="search" src="img/btn_search.gif" alt="">
+                </form>
+            </div>
+
+            <div id="commu">
+                <div id="commu_text1">+자유 게시판</div>
+                <div id="commu_text2">+방명록</div>
+                <div id="commu_text3">+공지사항</div>
+                <div id="commu_text4">+등업 요청</div>
+                <div id="commu_text5">+포토갤러리</div>
+            </div>
+        </aside>
+        
+        <section>
+            <!--section(img)-->
+            <img id="section_img" src="img/comm.png" alt="">
+
+            <!--section(bbs)-->
+            <div id="section_bbs_title">
+                <h3>자유 게시판</h3>
+                <hr>
+            </div>
+
+            <div id="section_bbs_explain">
+                <div id="section_bbs_explain_num">
+                    ▷ 총 5개의 게시물이 있습니다.
+                </div>
+
+                <div id="select">
+                    <img id="select_img" src="img/select_search.gif" alt="">
+
+                    <form id="select_form" action="">
+                        <select name="type" id="">
+                            <option value="1">제목</option>
+                            <option value="2">내용</option>
+                            <option value="3">글쓴이</option>
+                        </select>
+                    </form>
+
+                    <input id="select_input" type="text">
+                    <img id="search_img" src="img/search_button.gif" alt="">
+                </div>
+            </div>
+
+            <div id="section_bbs_explain_title">
+                <div id="title_1">번호</div>
+                <div id="title_2">제목</div>
+                <div id="title_3">글쓴이</div>
+                <div id="title_4">일시</div>
+                <div id="title_5">조회수</div>
+            </div>
+
+            <div id="section_bbs_explain_1">
+                <div id="ex1_1">1</div>
+                <div id="ex1_2">한남노가 끝난 뒤, ...</div>
+                <div id="ex1_3">홍길순</div>
+                <div id="ex1_4">2022-09-08</div>
+                <div id="ex1_5">7</div>
+            </div>
+            <hr>
+
+            <div id="section_bbs_explain_2">
+                <div id="ex2_1">2</div>
+                <div id="ex2_2">카카오 워크를 오픈하였는데, ...</div>
+                <div id="ex2_3">홍길동</div>
+                <div id="ex2_4">2022-09-05</div>
+                <div id="ex2_5">21</div>
+            </div>
+            <hr>
+
+            <div id="section_bbs_explain_3">
+                <div id="ex3_1">3</div>
+                <div id="ex3_2">문화탐방 후기</div>
+                <div id="ex3_3">이순신</div>
+                <div id="ex3_4">2022-09-05</div>
+                <div id="ex3_5">171</div>
+            </div>
+            <hr>
+
+            <div id="section_bbs_page">
+                <div id="page_select"> ◀ 이전 | 다음 ▶ </div>
+
+                <img id="page_list" src="img/list.png" alt="">
+                <img id="page_write" src="img/write.png" alt="">
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer>
+            <hr style="margin-left: 30px;">
+            <div id="footer_copyright"><b>출처: HTML & CSS for beginner</b></div>
+        </footer>
+
+        <!--script(유효성 검사)-->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            function Id_check(){
+                var id = document.querySelector('#id').value;
+                let id_val = /^[a-z]*$/;
+
+                /* ID 유효성 검사 */
+                if(!id_val.test(id)){
+                    alert("오류 : 사유: 영소문자만 가능");
+                    return false;
+                }
+                else if(id.length < 6){
+                    alert("오류 : 사유: 6자 미만 입력");
+                    return false;
+                }
+                alert("아이디 정상");
+            }
+
+            function Pw_check(){
+                var pw = document.querySelector('#pw').value;
+                let pw_val = /(?=.*[a-zA-Z])(?=.*[0-9])/;
+
+                /* PW 유효성 검사 */
+                if(!pw_val.test(pw)){
+                    alert("오류 : 사유: 영/숫자 혼합 필수");
+                    return false;
+                }
+                if(pw.length < 6){
+                    alert("오류 : 사유: 6자 미만 입력");
+                    return false;
+                }
+                alert("비밀번호 정상");
+            }
+
+            function login_Chk(){
+                var id = document.querySelector('#id').value;
+                let id_val = /^[a-z]*$/;
+
+                var pw = document.querySelector('#pw').value;
+                let pw_val = /(?=.*[a-zA-Z])(?=.*[0-9])/;
+
+                /* ID 유효성 검사 */
+                if(!id_val.test(id)){
+                    alert("오류 : 사유: 영소문자만 가능");
+                    return false;
+                }
+                else if(id.length < 6){
+                    alert("오류 : 사유: 6자 미만 입력");
+                    return false;
+                }
+                alert("아이디 정상");
+                id.submmit();
+
+                /* PW 유효성 검사 */
+                if(!pw_val.test(pw)){
+                    alert("오류 : 사유: 영/숫자 혼합 필수");
+                    return false;
+                }
+                if(pw.length < 6){
+                    alert("오류 : 사유: 6자 미만 입력");
+                    return false;
+                }
+                alert("비밀번호 정상");
+                pw.submmit();
+            }
+        </script>
+    </body>
+</html>

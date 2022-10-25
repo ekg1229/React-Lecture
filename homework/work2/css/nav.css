@@ -1,0 +1,32 @@
+/*nav 관련*/
+#nav_1 {
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+#nav_2 {
+    width: 780px;
+    height: 50px;
+    padding-top: 8px;
+    background-image: url("../img/main_menu_bg.png");
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: 5px;
+    color: white;
+}
+#nav_2_text1 {
+    margin-left: 45px;
+}
+#nav_2_text2 {
+    margin-left: 70px;
+}
+#nav_2_text3 {
+    margin-left: 80px;
+}
+#nav_2_text4 {
+    margin-left: 65px;
+}
+#nav_2_text5 {
+    margin-left: 60px;
+}

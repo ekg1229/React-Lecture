@@ -1,0 +1,15 @@
+.login{
+  width: 200px;
+  height: 150px;
+  background-color: orange;
+  border: solid 1px lightgray;
+  border-radius: 10px;
+  box-shadow: 6px 6px 5px #888888;
+  text-align: center;
+}
+.text{
+  margin-top: 1rem;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}

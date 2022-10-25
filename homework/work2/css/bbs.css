@@ -1,0 +1,152 @@
+/*게시판 관련*/
+#section_img {
+    width: 750px;
+    height: 230px;
+}
+
+#section_bbs_title h3 {
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 15px;
+}
+
+#section_bbs_explain {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+#section_bbs_explain_num {
+    margin-left: 5px;
+}
+#select {
+    display: flex;
+    justify-content: space-evenly;
+}
+#select_img {
+    width: 70px;
+    height: 20px;
+    margin-right: 5px;
+}
+#select_form {
+    display: flex;
+    width: 60px;
+    height: 20px;
+    margin-right: 10px;
+}
+#select_input {
+    display: flex;
+    margin-right: 10px;
+    width: 100px;
+}
+#search_img {
+    display: flex;
+    margin-right: 10px;
+    width: 50px;
+    height: 23px;
+}
+
+#section_bbs_explain_title {
+    display: flex;
+    background-color: gainsboro;
+    border: gray solid 2px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin-top: 10px;
+}
+#section_bbs_explain_title div {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#title_1 {
+    margin-left: 15px;
+}
+#title_2 {
+    margin-left: 260px;
+}
+#title_3 {
+    margin-left: 170px;
+}
+#title_4 {
+    margin-left: 50px;
+}
+#title_5 {
+    margin-left: 50px;
+}
+
+#section_bbs_explain_1 {
+    display: flex;
+    padding-top: 10px;
+}
+#ex1_1 {
+    margin-left: 25px;
+}
+#ex1_2 {
+    margin-left: 35px;
+}
+#ex1_3 {
+    margin-left: 295px;
+}
+#ex1_4 {
+    margin-left: 30px;
+}
+#ex1_5 {
+    margin-left: 40px;
+}
+
+#section_bbs_explain_2 {
+    display: flex;
+}
+#ex2_1 {
+    margin-left: 25px;
+}
+#ex2_2 {
+    margin-left: 34px; 
+}
+#ex2_3 {
+    margin-left: 216px;
+}
+#ex2_4 {
+margin-left: 30px;
+}
+#ex2_5 {
+margin-left: 35px;
+}
+
+#section_bbs_explain_3 {
+    display: flex;
+}
+#ex3_1 {
+    margin-left: 25px;
+}
+#ex3_2 {
+    margin-left: 35px;
+}
+#ex3_3 {
+    margin-left: 336px;
+}
+#ex3_4 {
+    margin-left: 30px;
+}
+#ex3_5 {
+    margin-left: 30px;
+}
+
+#section_bbs_page {
+    display: flex;
+    padding-top: 20px;
+}
+#page_select {
+    margin-left: 290px;
+}
+#page_list {
+    margin-left: 180px;
+    width: 50px;
+    height: 26px;
+}
+#page_write {
+    margin-left: 10px;
+    width: 80px;
+    height: 28px;
+}
